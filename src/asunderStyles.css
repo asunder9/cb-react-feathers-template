@@ -1,0 +1,14 @@
+.hover:hover {
+    cursor: pointer;
+}
+.zoom:hover {
+    transform: scale(102%);
+}
+
+.transform-delay {
+    transition: transform 0.1s;
+}
+
+.small-prime-tooltip {
+    transform: scale(70%);
+}
