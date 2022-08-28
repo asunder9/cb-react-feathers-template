@@ -30,7 +30,7 @@ import AccountPage from "../components/AccountPage/AccountPage";
 import ToastWrapper from "./wrappers/ToastWrapper";
 import StartupWrapper from "./wrappers/StartupWrapper";
 import LoadingWrapper from "./wrappers/LoadingWrapper";
-// ~add-imports~
+// ~cb-add-import~
 
 const MyRouter = () => {
     const [layoutMode, setLayoutMode] = useState("static");
@@ -155,7 +155,6 @@ const MyRouter = () => {
     return (
         // <div>
         <div className={wrapperClass} onClick={onWrapperClick}>
-            {/* <Tooltip ref={copyTooltipRef} target=".block-action-copy" position="bottom" content="Copied to clipboard" event="focus" /> */}
             {location.pathname === "/login" ? null : (
                 <AppTopbar
                     onToggleMenuClick={onToggleMenuClick}
