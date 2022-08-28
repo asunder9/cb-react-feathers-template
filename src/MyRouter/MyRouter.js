@@ -30,6 +30,7 @@ import AccountPage from "../components/AccountPage/AccountPage";
 import ToastWrapper from "./wrappers/ToastWrapper";
 import StartupWrapper from "./wrappers/StartupWrapper";
 import LoadingWrapper from "./wrappers/LoadingWrapper";
+// ~add-imports~
 
 const MyRouter = () => {
     const [layoutMode, setLayoutMode] = useState("static");
@@ -176,6 +177,7 @@ const MyRouter = () => {
                     <Route path="/login" component={LoginPage} />
                     <Route path="/dashboard" exact render={() => <Dashboard colorMode={layoutColorMode} location={location} />} />
                     <Route path="/account" component={AccountPage} />
+                    {/* ~cb-add-route~ */}
 
                     <Route path="*" component={NoMatch} />
                 </Switch>
