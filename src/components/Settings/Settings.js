@@ -9,7 +9,7 @@ import { Tag } from "primereact/tag";
 
 import EditSaveCancelComponent from "../common/EditSaveCancelComponent";
 
-const SettingsPage = (props) => {
+const Settings = (props) => {
     const [nvm, setnvmVersion] = useState({ version: null });
     const [node, setnodeVersion] = useState({ version: null });
     const [feathersCli, setfeathersCliVersion] = useState({ version: null });
@@ -131,4 +131,4 @@ const mapDispatch = (dispatch) => ({
     patchUserSystemSoftwares: (data) => dispatch.auth.patchUserSystemSoftwares(data),
 });
 
-export default connect(mapState, mapDispatch)(SettingsPage);
+export default connect(mapState, mapDispatch)(Settings);

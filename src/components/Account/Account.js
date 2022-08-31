@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Button } from "primereact/button";
 import { Avatar } from "primereact/avatar";
 
-const AccountPage = (props) => {
+const Account = (props) => {
     return (
         <div className="col-12 flex justify-content-center">
             <div className="col-8">
@@ -26,4 +26,4 @@ const mapDispatch = (dispatch) => ({
     //
 });
 
-export default connect(mapState, mapDispatch)(AccountPage);
+export default connect(mapState, mapDispatch)(Account);

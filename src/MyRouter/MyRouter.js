@@ -26,7 +26,7 @@ import LoginPage from "../components/LoginPage/LoginPage";
 import NoMatch from "./NoMatch";
 import MainLayout from "../components/Layouts/MainLayout";
 
-import AccountPage from "../components/AccountPage/AccountPage";
+import Account from "../components/Account/Account";
 import ToastWrapper from "./wrappers/ToastWrapper";
 import StartupWrapper from "./wrappers/StartupWrapper";
 import LoadingWrapper from "./wrappers/LoadingWrapper";
@@ -175,7 +175,7 @@ const MyRouter = () => {
                     <Route path="/" exact render={() => <Dashboard colorMode={layoutColorMode} location={location} />} />
                     <Route path="/login" component={LoginPage} />
                     <Route path="/dashboard" exact render={() => <Dashboard colorMode={layoutColorMode} location={location} />} />
-                    <Route path="/account" component={AccountPage} />
+                    <Route path="/account" component={Account} />
                     {/* ~cb-add-route~ */}
 
                     <Route path="*" component={NoMatch} />
